@@ -1,0 +1,15 @@
+.header{
+    height: 70px;
+    width: 97%;
+    font-size: 20px;
+    font-family: fantasy;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+
+}
+
+.cart{
+    display: flex;
+
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios'
 import BookItem from "../bookitem/BookItem";
 
+import './BookList.css';
+
 export default class BookList extends  React.Component{
 
     constructor(props) {

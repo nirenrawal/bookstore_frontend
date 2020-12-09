@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import BookList from "./components/booklist/BookList";
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <div className="App">
-      <h1>Kea Book Store</h1>
+      <Header/>
+
         <BookList />
+
     </div>
   );
 }
