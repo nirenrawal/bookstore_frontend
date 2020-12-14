@@ -34,7 +34,8 @@ export default class BookItem extends React.Component {
         this.setState({isVisible: false})
     }
 
-    addToCart(){
+    addToCart() {
+        console.log("TEST")
       const cartItems = [...this.state.carts];
       const cartItemToAdd = this.props.book;
       const existingCartItem = cartItems.find(cartItem => cartItem.bookId === cartItemToAdd.bookId);
@@ -72,8 +73,9 @@ export default class BookItem extends React.Component {
 
                     <div className="book-item-footer">
                         <span className="price">DKK {this.props.book.price}</span>
-                        <button className="book-item-footer-button" onClick={() => this.addToCart()}>Add to Cart</button>
-                    </div>x
+                        <span className="edition">year {this.props.book.edition}</span>
+                        {/* <button className="book-item-footer-button" onClick={() => this.addToCart()}>Add to Cart</button>*/}
+                    </div>
 
 
                     {/*
