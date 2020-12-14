@@ -1,0 +1,73 @@
+.dialog-shadow{
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 4;
+}
+
+.dialog{
+    width: 400px;
+    max-height: calc(100% - 100px);
+    background-color: white;
+    position: fixed;
+    left: calc(50% - 200px);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    top: 75px;
+}
+
+.dialog-banner{
+    box-shadow: 0px 0px 10px 1px grey;
+    display: flex;
+    justify-content: center;
+    background-color: #0aab8d;
+}
+
+.dialog-banner .title{
+    font-size: 45px;
+    padding:5px;
+}
+
+.dialog-banner .title .edition{
+    font-size: 20px;
+
+}
+.dialog-banner .btn-close{
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 5px;
+    font-weight: 500;
+
+}
+
+.btn-close:hover{
+    color:red
+}
+
+.dialog-content{
+    box-shadow: 0px 0px 2px 0px grey;
+    overflow: auto;
+    min-height: 200px;
+    padding: 10px 20px;
+    background-color: #e2c32b;
+}
+
+.dialog-footer{
+    box-shadow: 0px -2px 10px 0px grey;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.dialog-diverse{
+    margin-bottom: 7px;
+    margin-top: 7px;
+    margin-left: 10px;
+}

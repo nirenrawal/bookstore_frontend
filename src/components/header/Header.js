@@ -1,15 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './Header.css';
 
 const Header = () => {
+
     return(
         <div className="header">
-            <span>
-                Kea Book
-            </span>
-            <span className="cart">
-                CART
-            </span>
+            <div className="header-title">
+                 <Link to="/">KEA BOOK</Link>
+            </div>
+            <div className="cart">
+               <Link to="/cart">Cart</Link>
+            </div>
         </div>
     )
 }

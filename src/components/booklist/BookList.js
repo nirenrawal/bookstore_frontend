@@ -15,10 +15,9 @@ export default class BookList extends  React.Component{
 
     componentDidMount() {
         axios.get(`https://minebook.herokuapp.com/api/books`)
-            .then(res => {
-                //console.log(res)
-                this.setState({
-                    books : res.data
+            .then(res => {this.setState(
+                {
+                books : res.data
                 })
             })
     }
